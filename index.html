@@ -1,129 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meet Rudakiya | Network Engineer</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meet Rudakiya | Network Engineer</title>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #0a0f1c;
-            color: white;
-        }
+<style>
+body {
+    margin: 0;
+    font-family: 'Courier New', monospace;
+    background: black;
+    color: #00ffcc;
+}
 
-        header {
-            text-align: center;
-            padding: 50px 20px;
-            background: linear-gradient(135deg, #0f172a, #1e293b);
-        }
+/* typing effect */
+.typing {
+    border-right: 2px solid #00ffcc;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation: typing 4s steps(30, end) forwards, blink 0.7s infinite;
+}
 
-        h1 {
-            font-size: 40px;
-            margin: 10px 0;
-        }
+@keyframes typing {
+    to { width: 100%; }
+}
+@keyframes blink {
+    50% { border-color: transparent; }
+}
 
-        p {
-            color: #94a3b8;
-        }
+header {
+    text-align: center;
+    padding: 60px 20px;
+}
 
-        section {
-            padding: 40px 20px;
-            max-width: 1000px;
-            margin: auto;
-        }
+h1 {
+    font-size: 40px;
+}
 
-        .card {
-            background: #1e293b;
-            padding: 20px;
-            margin: 15px 0;
-            border-radius: 12px;
-        }
+section {
+    padding: 40px;
+    border-top: 1px solid #00ffcc33;
+}
 
-        a {
-            color: #38bdf8;
-            text-decoration: none;
-        }
+.card {
+    background: #111;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+    transition: 0.3s;
+}
 
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #020617;
-        }
-    </style>
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #00ffcc;
+}
+
+a {
+    color: #00ffcc;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #00ffcc33;
+}
+
+/* glow effect */
+.glow {
+    text-shadow: 0 0 10px #00ffcc;
+}
+</style>
 </head>
 
 <body>
 
 <header>
-    <h1>Meet Rudakiya</h1>
-    <p>Network Engineer | IT Specialist | Future Ethical Hacker</p>
+    <h1 class="glow">Meet Rudakiya</h1>
+    <p class="typing">Network Engineer | Ethical Hacker | IT Specialist</p>
     <p>Email: memeet091@gmail.com</p>
 </header>
 
 <section>
-    <h2>👨‍💻 About Me</h2>
-    <div class="card">
-        <p>
-            I am a passionate IT & Network Engineer working at DIGITRON INDIA.
-            I specialize in networking, switching, VLAN configuration, and modern technologies.
-            I am also learning ethical hacking and AI technologies to grow in the cybersecurity field.
-        </p>
-    </div>
+<h2>👨‍💻 About Me</h2>
+<div class="card">
+<p>
+Passionate Network Engineer at DIGITRON INDIA.  
+Specialized in VLAN, switching & real-world networking.  
+Currently learning Ethical Hacking & AI technologies 🚀
+</p>
+</div>
 </section>
 
 <section>
-    <h2>💼 Work Experience</h2>
-    <div class="card">
-        <h3>DIGITRON INDIA</h3>
-        <p>Role: Network Engineer</p>
-        <p>
-            Managing switches, VLANs, network troubleshooting,
-            and handling real-time IT infrastructure.
-        </p>
-    </div>
+<h2>💼 Experience</h2>
+<div class="card">
+<h3>DIGITRON INDIA</h3>
+<p>Network Engineer</p>
+<p>Handling switches, VLAN configs & troubleshooting.</p>
+</div>
 </section>
 
 <section>
-    <h2>🛠️ Technical Skills</h2>
-    <div class="card">
-        <ul>
-            <li>Networking (VLAN, Switching, Routing)</li>
-            <li>Cisco & Aruba Switch Configuration</li>
-            <li>Basic Cybersecurity</li>
-            <li>AI Tools & Automation</li>
-            <li>System Troubleshooting</li>
-        </ul>
-    </div>
+<h2>🛠 Skills</h2>
+<div class="card">
+<ul>
+<li>Networking (VLAN, Routing)</li>
+<li>Cisco & Aruba</li>
+<li>Cybersecurity Basics</li>
+<li>AI Tools</li>
+</ul>
+</div>
 </section>
 
 <section>
-    <h2>📜 Certifications</h2>
-    <div class="card">
-        <p>
-            Google AI Agent Certificate 👉 
-            <a href="https://www.kaggle.com/certification/badges/meetrudakiya/105" target="_blank">
-                View Certificate
-            </a>
-        </p>
-    </div>
+<h2>📜 Certificate</h2>
+<div class="card">
+<a href="https://www.kaggle.com/certification/badges/meetrudakiya/105" target="_blank">
+🔥 Google AI Agent Certificate
+</a>
+</div>
 </section>
 
 <section>
-    <h2>🔗 Connect With Me</h2>
-    <div class="card">
-        <p>
-            LinkedIn 👉 
-            <a href="https://www.linkedin.com/in/meet-r-58a2b923a" target="_blank">
-                Visit Profile
-            </a>
-        </p>
-    </div>
+<h2>🔗 Connect</h2>
+<div class="card">
+<a href="https://www.linkedin.com/in/meet-r-58a2b923a" target="_blank">
+LinkedIn Profile
+</a>
+</div>
 </section>
 
 <footer>
-    <p>© 2026 Meet Rudakiya | infomeetrudakiya</p>
+<p>© Meet Rudakiya | infomeetrudakiya</p>
 </footer>
 
 </body>
