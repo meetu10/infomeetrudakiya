@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Meet Rudakiya | Network Engineer</title>
+<title>Signal Core | Network Engineer</title>
 
 <style>
 * {
@@ -16,19 +16,33 @@ body {
     font-family: 'Segoe UI', sans-serif;
     background: linear-gradient(135deg, #020617, #0f172a);
     color: white;
+    overflow-x: hidden;
 }
 
 /* NAVBAR */
 nav {
     display: flex;
     justify-content: space-between;
-    padding: 20px 40px;
+    align-items: center;
+    padding: 15px 40px;
     background: rgba(255,255,255,0.05);
     backdrop-filter: blur(10px);
 }
 
-nav h2 {
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.logo h2 {
     color: #38bdf8;
+    font-size: 18px;
+    letter-spacing: 1px;
 }
 
 nav a {
@@ -40,7 +54,7 @@ nav a {
 /* HERO */
 .hero {
     text-align: center;
-    padding: 80px 20px;
+    padding: 70px 20px;
 }
 
 .hero h1 {
@@ -58,32 +72,36 @@ nav a {
 
 /* SECTION */
 section {
-    max-width: 1000px;
+    max-width: 1100px;
     margin: auto;
     padding: 40px 20px;
 }
 
-/* GLASS CARD */
+/* GRID FIX */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+/* CARD */
 .card {
     background: rgba(255,255,255,0.05);
     border: 1px solid rgba(255,255,255,0.1);
     backdrop-filter: blur(12px);
-    padding: 25px;
+    padding: 20px;
     border-radius: 15px;
-    margin: 20px 0;
     transition: 0.3s;
 }
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 0 20px #38bdf8;
+    box-shadow: 0 0 15px #38bdf8;
 }
 
-/* GRID */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
-    gap: 20px;
+a {
+    color: #38bdf8;
+    text-decoration: none;
 }
 
 /* FOOTER */
@@ -97,25 +115,28 @@ footer {
 
 <body>
 
+<!-- NAVBAR -->
 <nav>
-    <h2>NextGen Networks</h2>
+    <div class="logo">
+        <img src="logo.jpg">
+        <h2>Signal Core</h2>
+    </div>
+
     <div>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
     </div>
 </nav>
-<nav>
-    <div style="display:flex; align-items:center; gap:10px;">
-        <img src="logo.jpg" style="height:40px;">
-        <h2 style="color:#38bdf8; font-size:18px;">Signal Core</h2>
-    </div>
+
+<!-- HERO -->
 <div class="hero">
     <h1>Meet <span>Rudakiya</span></h1>
     <p>Network Engineer | IT Specialist</p>
     <p>memeet091@gmail.com</p>
 </div>
 
+<!-- ABOUT -->
 <section id="about">
     <h2>👨‍💻 About Me</h2>
     <div class="card">
@@ -126,6 +147,7 @@ footer {
     </div>
 </section>
 
+<!-- SKILLS -->
 <section id="skills">
     <h2>🛠 Technical Skills</h2>
     <div class="grid">
@@ -136,15 +158,17 @@ footer {
     </div>
 </section>
 
+<!-- EXPERIENCE -->
 <section>
     <h2>💼 Experience</h2>
     <div class="card">
         <h3>DIGITRON INDIA</h3>
         <p>Network Engineer</p>
-        <p>Handling network infrastructure, VLAN setup, and real-time troubleshooting.</p>
+        <p>Handling network infrastructure, VLAN setup, and troubleshooting.</p>
     </div>
 </section>
 
+<!-- CERTIFICATION -->
 <section>
     <h2>📜 Certification</h2>
     <div class="card">
@@ -154,6 +178,7 @@ footer {
     </div>
 </section>
 
+<!-- CONTACT -->
 <section id="contact">
     <h2>🔗 Connect</h2>
     <div class="card">
@@ -162,27 +187,26 @@ footer {
         </a>
     </div>
 </section>
+
+<!-- OFFICE -->
 <section>
     <h2>🏢 Office Details</h2>
     <div class="card">
-
-        <img src="logo.jpg" style="width:180px;">
-
+        <img src="logo.jpg" style="width:180px; margin-bottom:10px;">
         <p><strong>DIGITRON INDIA</strong></p>
-        <p>Corporate Office:</p>
         <p>
             FF5 & 10 A, Bilkha Plaza,<br>
             Opp. Lord's Restaurant,<br>
-            Nr. Dharam Cinema,<br>
-            Kasturba Road, Rajkot, Gujarat
+            Kasturba Road, Rajkot
         </p>
-
         <p>📞 +91 281 2474384</p>
         <p>📧 info@digitronindia.in</p>
     </div>
 </section>
+
+<!-- FOOTER -->
 <footer>
-    <p>© 2026 Meet Rudakiya | infomeetrudakiya</p>
+    <p>© 2026 Signal Core</p>
 </footer>
 
 </body>
